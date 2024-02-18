@@ -228,7 +228,7 @@ nav{
   margin-bottom: 10rem;
 }
 .testimonial_container.section_description{
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
   color: var(--white);
 }
@@ -240,7 +240,7 @@ nav{
 .testimonial_card{
   padding: 2rem;
   background-color: var(--white);
-  border-radius: 50px;
+  border-radius: 60px;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
 }
 
@@ -323,4 +323,201 @@ nav{
 }
 .instructor_card p{
   color:var(--text-light);
+}
+.subscribe_content{
+  padding: 4rem 1rem;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url("assets/subscribe.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow:5px 5px 20px rgba(0,0,0,0.5);
+}
+.subscribe_content form{
+  max-width: 600px;
+  margin-inline: auto;
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5rem;
+}
+.subscribe_content input{
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--bg-dark);
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.subscribe_content.btn{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.subscribe_content p{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer{
+  background-color: var(--bg-dark);
+
+}
+.footer_container{
+  display: grid;
+  gap: 4rem 2rem;
+}
+.footer_col .logo{
+  margin-bottom: 2rem;
+}
+.footer_col.section_description{
+  max-width: 350px;
+  text-align: left;
+}
+.footer_col h4{
+margin-bottom: 2rem;
+font-size: 1.2rem;
+font-weight: 600;
+}
+.footer_links{
+  list-style: none;
+  display: flex; 
+  gap: 1rem;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.footer_col a{
+  color: var(--text-light);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.footer_col a:hover{
+  color: var(--secondary-color);
+}
+.footer_socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+.footer_socials li {
+  margin: 0 5px;
+}
+.footer_socials a{
+  font-size: 1.5rem;
+}
+.footer_bar{
+  padding: 1rem;
+  font-size: .8rem;
+  color: var(--text-light);
+  text-align: center;
+
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem; 
+}
+
+.footer_col {
+  text-align: left; 
+}
+
+.footer_socials li {
+  list-style: none; 
+}
+
+@media (width > 480px){
+  .information_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .instructor_grid{
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .experience_grid{
+     
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .footer_col:last-child{
+    grid-area: 2/1/3/2;
+  }
+}
+@media(width > 768px){
+  nav{
+    padding: 2rem 1rem;
+  }
+  .header_container{
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+  }
+  .header_content{
+    text-align: left;
+  }
+  .header_content:is(.section_header,.section_description){
+    text-align: left;
+  }
+  .banner_header_grid{
+    grid-gap:4rem;
+  }
+  .banner_content{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner_content.section_header{
+    text-align: left;
+  }
+  .infomation_header{
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: left;
+  }
+  .infomation_header:is(.section_header, .section_description){
+    text-align: left;
+  }
+  .information_grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .testimonial_grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .instructor_grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .subscribe_content{
+    padding:8rem 2rem;
+  }
+  .footer_container{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .footer_col:first-child{
+    grid-column: 1/3;
+  }
+  .footer_col:last-child{
+    grid-area: unset;
+  }
+}
+@media(width > 1200px){
+  .information_grid{
+    gap: 2rem;
+  }
+  .testimonial_grid{
+    gap: 2rem;
+  }
+
 }
