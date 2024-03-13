@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/72998a23e7.js" crossorigin="anonymous"></script>
+  <title>Ankita Portfolio</title>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Fullstack Developer</p>
+        <h1>Hey, This is <span>Ankita</span><br>From India</h1>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Ankita.jpg" >
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As a full-stack developer, I bring a robust skill set encompassing both frontend and backend technologies. Proficient in frameworks like React and Spring Boot, I excel in creating seamless, efficient web applications. Committed to delivering scalable solutions that drive user engagement and business growth.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('projects')">Projects</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Web App development</li>
+              <li><span>App Development</span><br>Building Android/ios apps</li>
+              <li><span>Frontend Development</span><br>Responsive UI design</li>
+              <li><span>Backend Development</span><br>Logically writing the codes using differeent languages</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="projects">
+            <ul>
+              <li><span>Web Development</span><br>Vehicle parking Management System</li>
+              <li><span>App Development</span><br>Coffee On Wheels</li>
+              <li><span>Product Development</span><br>Training & Placement</li>
+              <li><span>Advance java</span><br>E mentoring System</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="education">
+            <ul>
+              <li><span>MCA</span><br>Centurion University Of Technology & Management(2022-24)</li>
+              <li><span>Graduation</span><br>Sambalpur University(2019-22)</li>
+              <li><span>Higher Secondary</span><br>CHSE(2017-19)</li>
+              <li><span>High School</span><br>BSE(2017)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Services -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>As a front-end developer proficient in HTML, CSS, JavaScript, React, and Bootstrap, I specialize in crafting visually appealing and interactive user interfaces. With a keen eye for design and a passion for innovation, I strive to create seamless and engaging web experiences that delight users.</p>
+        <a href="https://github.com/Ankita-Biswal">learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>Backend Development</h2>
+        <p>As a backend developer proficient in Core Java, Advanced Java, Spring Boot, and Node.js, I specialize in crafting efficient server-side solutions. With expertise in diverse technologies, I architect robust systems, ensuring seamless functionality and scalability for dynamic web applications.</p>
+        <a href="https://github.com/Ankita-Biswal">learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Design</h2>
+        <p>An adept Android developer proficient in Java , specializing in crafting captivating mobile experiences. With expertise in UI/UX design, API integration, and performance optimization, I am dedicated to delivering innovative and user-friendly Android applications that meet the highest standards of quality and functionality.</p>
+        <a href="https://github.com/Ankita-Biswal">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work1.jpg" alt="">
+        <div class="layer">
+          <h3>E Mentoring System</h3>
+          <p> Developing a real time mentoring system for the Mentors and mentees(students) in university campuses,the data presented in frontend are developed using HTML,CSS and Bootstrap.  without changing the no of words customize it</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work2.jpg" alt="">
+        <div class="layer">
+          <h3>Coffee on wheels</h3>
+          <p>Excited to unveil "Coffee on Wheels," our team's innovative e-commerce Android app for coffee enthusiasts. Providing convenient access to quality brews on-the-go.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work3.jpg" alt="">
+        <div class="layer">
+          <h3>Training and placement site </h3>
+          <p>
+            I crafted an interactive student job portal utilizing React, precisely designed to address the distinct requirements of students in their job search. Complementing this, I architected a versatile API with Spring Boot, effectively managing the organization and retrieval of student and company data. This unified system facilitates a seamless transition from academia to the professional sphere, guaranteeing a streamlined and efficient journey from education to employment.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">Seemore</a>
+  </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>ankitabiswal70@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+918249866576</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/ruchi_5112?utm_source=qr&igsh=MWhrb3kzZDUyczBxZw=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ankita-biswal-668693270"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Ankita-Biswal"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/AnkitaResume-3.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="YourName" required>
+          <input type="email" name="Email" placeholder="Your mail id" required>
+          <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &#169; Ankita.Made with  <i class="fa-solid fa-heart"></i>  by Ankita Biswal</p>
+  </div>
+</div>
+  
+  
+  
+  
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right = "0";
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxakB3e-D197MibM1rs_0aGKS-jFYowwFeuLK9goVib7zNGVXqbIdKZvYcpbHlf5MoB/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message submitted Successfully !!!"
+       setTimeout(function(){
+        msg.innerHTML = ""
+       },5000)
+      form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
